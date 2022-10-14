@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { ReactComponent as Icon } from './icon.svg';
 
 /* eslint-disable-next-line */
 export interface ButtonProps {}
@@ -28,7 +29,11 @@ const StyledButton = styled.button`
 `;
 
 export function Button(props: ButtonProps) {
-  return <StyledButton>Button</StyledButton>;
+  return (
+    <StyledButton>
+      <Icon /> Button
+    </StyledButton>
+  );
 }
 
 export default Button;
